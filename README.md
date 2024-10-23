@@ -3,18 +3,19 @@
 ## 💻배포 주소
 > [국립과천과학관.com](https://myjin0806.github.io/test01/)
 
-## 📂깃허브 레포
+## 📋깃허브 레포
 > https://github.com/myjin0806/test_01.git
 
-## 파일 구조
-index.html
- ┣ index_style.css 
- ┣ index_responsive.css
- ┗ index_javascript.js
- notice.html
- ┣ notice_style.css 
- ┣ notice_responsive.css
- ┗ notice_js.js
+## 📂파일 구조
+components    
+┣index.html <br>
+┃┣ index_style.css <br>
+┃┣ index_responsive.css <br>
+┃┗ index_javascript.js <br>
+┗notice.html <br>
+ ┣ notice_style.css  <br>
+ ┣ notice_responsive.css <br>
+ ┗ notice_js.js <br>
  
 ## ✍기획서
 > [구글 슬라이드](https://docs.google.com/presentation/d/1w7QQLhwrw0ZlwWZ8iGXSbBX4-12rz7gPqYG1je7EvrE/edit?usp=sharing)
