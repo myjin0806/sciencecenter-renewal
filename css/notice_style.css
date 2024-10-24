@@ -688,7 +688,7 @@ input[name=submit]{
   font-weight: 600;
 }
 
-/* 공지사항 */
+/* 공지사항 테이블 */
 .contents{
   width: 1280px;
   margin: 0 auto;
@@ -739,7 +739,9 @@ input:focus {
   width: 100%;
   margin: auto;
 }
+
 #notice_table{
+  table-layout: fixed;
   width: 100%;
   font-size: 16px;
   border-collapse: collapse;
@@ -749,19 +751,15 @@ input:focus {
 #notice_table thead{
   height: 58px;
 }
-#notice_table thead tr{
-}
 #notice_table thead tr th{
   border-bottom: 1px solid var(--darkblue);
 }
-
-#notice_table tbody{}
 #notice_table tbody tr{
-
+  height: 60px;
 }
 #notice_table tbody tr td{
-  height: 60px;
   text-align: center;
+  color: var(--dark-black);
   border-bottom: 1px solid var(--silver-gray);
 }
 #notice_table tbody tr td:nth-child(2){
@@ -786,11 +784,11 @@ input:focus {
   z-index: -1;
 }
 #notice_table tbody tr td a{
-  color: black;
+  color: var(--dark-black);
 }
 #notice_table tbody tr td a strong{
   display: block;
-  max-width: 80%;
+  max-width: 90%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -803,22 +801,22 @@ input:focus {
   color: var(--mainBlue);
 }
 
-#notice_table colgroup .number{
+.number{
   width: 10%;
 }
-#notice_table colgroup .subject{
-  width: 40%;
+.subject{
+  width: 45%;
 }
-#notice_table colgroup .file{
+.file{
   width: 10%;
 }
-#notice_table colgroup .writer{
+.writer{
   width: 10%;
 }
-#notice_table colgroup .date{
-  width: 20%;
+.date{
+  width: 15%;
 }
-#notice_table colgroup .view{
+.view{
   width: 10%;
 }
 

@@ -1100,7 +1100,7 @@ input[name=submit]{
 /* 프로그램 스와이퍼 */
 .program_slider{
   padding-top: 12px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   width: 1280px;
   height: 430px;
   overflow: hidden;
@@ -1453,6 +1453,7 @@ input[name=submit]{
   position: absolute;
   display: flex;
   gap: 8px;
+
 }
 .sns_wrap .title .sns_btn a{
   position: relative;
@@ -1462,6 +1463,7 @@ input[name=submit]{
   width: 28px;
   height: 28px;
   background-position: 0px 0px;
+  
 }
 .sns_btn .instagram_btn{
   background: url(../images/sns_icon.png) 100% no-repeat;
@@ -1595,7 +1597,7 @@ input[name=submit]{
 }
 .sns_slider .swiper-slide a .content p{
   width: 100%;
-  height: 136px;
+  height: 130px;
   color: var(--silver-black);
   font-size: 14px;
   overflow: hidden;

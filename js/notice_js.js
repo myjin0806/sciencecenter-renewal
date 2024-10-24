@@ -300,16 +300,20 @@ function displayPage(num){
   }
   //첫번째 페이지 일경우 화살표 안보이게
   if(pageActiveIdx === 0){
-    prevPageBtn.style.display = 'none'
+    prevPageBtn.style.display = 'none';
+    stepBackwardBtn.style.display = 'none'
   }else{
-    prevPageBtn.style.display ='block'
+    prevPageBtn.style.display ='block';
+    stepBackwardBtn.style.display = 'block'
   }
   //마지막 페이지 경우 다음페이지 버튼 숨기기
 
   if(pageActiveIdx == totalPageCount - 1){
     nextPageBtn.style.display = 'none';
+    stepForwardBtn.style.display = 'none'
   }else{
-    nextPageBtn.style.display = 'block'
+    nextPageBtn.style.display = 'block';
+    stepForwardBtn.style.display = 'block'
   }
 }
 //초기 페이지네이션 그룹 로드

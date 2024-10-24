@@ -369,6 +369,10 @@ var SnsSlider = new Swiper(".sns_slider", {
 var VideoSlider = new Swiper(".video_slider", {
   loop: true,
   spaceBetween: 40,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".video-swiper-pagination",
     clickable: true,

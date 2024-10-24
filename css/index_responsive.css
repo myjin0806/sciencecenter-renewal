@@ -626,12 +626,12 @@
   }
   #sel_family{
     text-indent: 6px;
-    width: 217px;
+    width: 80%;
     height: 40px;
     font-size: 12px;
   }
   .family_site #open_site{
-    width: 40px;
+    width: 20%;
     height: 40px;
     line-height: 40px;
     font-size: 12px;
