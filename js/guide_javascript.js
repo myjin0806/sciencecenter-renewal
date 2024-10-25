@@ -186,22 +186,29 @@ mediaQuery.addEventListener('change', handleScreenChange);
 
 
 //cont_navi
-
+// 모든 리스트 아이템(li)을 선택
 let naviItems = document.querySelectorAll('.cont_navi_list > ul > li');
+// 각 리스트 아이템에 클릭 이벤트 추가
 naviItems.forEach(function(item) {
+  // 리스트 아이템 클릭 시
   item.querySelector('a').addEventListener('click', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // 기본 링크 동작 방지
+    // 해당 리스트 아이템의 depth(서브메뉴) 선택
     let depthMenu = item.querySelector('.depth');
     if (depthMenu) {
+      // 서브메뉴의 높이가 없거나 0일 때
       if (depthMenu.style.height === '' || depthMenu.style.height === '0px') {
+        // 모든 서브메뉴를 닫음
         naviItems.forEach(function(i) {
           let subMenu = i.querySelector('.depth');
           if (subMenu) {
             subMenu.style.height = '0';
           }
         });
+        // 현재 클릭한 아이템의 서브메뉴만 펼침
         depthMenu.style.height = depthMenu.scrollHeight + 'px';
       } else {
+        // 이미 펼쳐져 있는 경우 다시 접기
         depthMenu.style.height = '0';
       }
     }
