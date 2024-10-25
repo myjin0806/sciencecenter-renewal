@@ -181,7 +181,33 @@ function handleScreenChange(e){
     }  
   }
 }
+
 mediaQuery.addEventListener('change', handleScreenChange);
+
+
+//cont_navi
+
+let naviItems = document.querySelectorAll('.cont_navi_list > ul > li');
+naviItems.forEach(function(item) {
+  item.querySelector('a').addEventListener('click', function(event) {
+    event.preventDefault();
+    let depthMenu = item.querySelector('.depth');
+    if (depthMenu) {
+      if (depthMenu.style.height === '' || depthMenu.style.height === '0px') {
+        naviItems.forEach(function(i) {
+          let subMenu = i.querySelector('.depth');
+          if (subMenu) {
+            subMenu.style.height = '0';
+          }
+        });
+        depthMenu.style.height = depthMenu.scrollHeight + 'px';
+      } else {
+        depthMenu.style.height = '0';
+      }
+    }
+  });
+});
+
 handleScreenChange(mediaQuery); 
 //비상대피로 모달창
 let exitBtn = document.getElementById('exit'),
