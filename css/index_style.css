@@ -1979,9 +1979,15 @@ footer{
   animation: point 1.5s infinite;
   transform: translate(-50%, -50%);
 }
-.submenu_cont .pointer::after{
+.submenu_cont ul li:nth-child(4).pointer::after{
   top: 85%;
   right: 32%;
+  transform: translate(-50%, -50%);
+  animation: none;
+}
+.submenu_cont ul li:nth-child(1).pointer::after{
+  top: 85%;
+  right: 54%;
   transform: translate(-50%, -50%);
   animation: none;
 }
