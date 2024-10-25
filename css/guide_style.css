@@ -740,66 +740,66 @@ input[name=submit]{
 .guide_map div.active em{
   font-size: 14px;
 }
-
 .guide_map .item01{
-  top: 251px;
-  left: 747px;
+  top: 270px;
+  left: 744px;
 }
 .guide_map .item02{
-  top: 265px;
+  top: 296px;
   left: 557px;
 }
 .guide_map .item03{
-  top: 163px;
-  left: 770px;
+  top: 177px;
+  left: 760px;
 }
 .guide_map .item04{
-  top: 319px;
+  top: 348px;
   left: 579px;
 }
 .guide_map .item05{
-  top: 335px;
-  left: 359px;
+  top: 362px;
+  left: 351px;
 }
 .guide_map .item06{
-  top: 292px;
-  left: 374px;
+  top: 313px;
+  left: 392px;
 }
 .guide_map .item07{
-  top: 203px;
-  left: 663px;
+  top: 218px;
+  left: 684px;
 }
 .guide_map .item08{
-  top: 274px;
+  top: 309px;
   left: 57px;
 }
 .guide_map .item09{
-  top: 180px;
+  top: 214px;
   left: 98px;
 }
 .guide_map .item10{
-  top: 97px;
-  left: 732px;
+  top: 136px;
+  left: 709px;
 }
 .guide_map .item11{
-  top: 67px;
-  left: 629px;;
+  top: 104px;
+  left: 635px;
 }
 .guide_map .item12{
-  top: 124px;
+  top: 158px;
   left: 525px;
+
 }
 .guide_map .item13{
-  top: 67px;
-  left: 457px;
+  top: 94px;
+  left: 456px;
 }
 .guide_map .item14{
-  top: 235px;
+  top: 266px;
   left: 199px;
 }
 .guide_map .item15{
-  top: 2px;
-  left: 374px;
+  top: 27px;
+  left: 366px;
 }
 
 /* 가이드 공지 */
@@ -814,14 +814,55 @@ input[name=submit]{
 .guide_notice button{
   float: right;
   text-align: center;
-  padding: 7px 25px;
+  padding: 10px 25px;
   border-radius: 10px;
   background-color: var(--mainBlue);
   color: white;
   cursor: pointer;
+  transition: .3s;
+  border: none;
 }
 .guide_notice button:hover{
+  background-color: var(--lightblue);
+  color: var(--dark-black);
   font-weight: 600;
+}
+/* 비상대피도 모달 */
+.modal_exit{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: none;
+}
+.modal_exit.active{
+  display: block;
+}
+.modal_exit .close_modal{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../images/btn_x.svg) 100% no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+.modal_exit .img_box{
+  border-radius: 30px;
+  overflow: hidden;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.modal_exit img{
+  width: 100%;
 }
 /* 가이드 리스트 */
 .guide_list{

@@ -32,7 +32,7 @@ miniGoToTop.addEventListener('click',function(event){
   });
 });
 
-//헤더
+//헤더&서브메뉴
 let header = document.querySelector('header');
 let navItems = document.querySelectorAll('.nav_item');
 let submenus = document.querySelectorAll('.submenu');

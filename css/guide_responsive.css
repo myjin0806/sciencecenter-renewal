@@ -68,7 +68,7 @@
   }
   /* 가이드맵 */
   .guide_map{
-    width: 90%;
+    width: 100%;
     margin-top: 30px;
   }
   .guide_map img{
@@ -99,7 +99,7 @@
   }
   .guide_map .item03{
     top: 38%;
-    left: 77.5%;
+    left: 74.5%;
   }
   .guide_map .item04{
     top: 74%;
@@ -164,7 +164,16 @@
     display: block;
     margin-bottom: 10px;
   }
-
+  /* 모달창 */
+  .modal_exit .close_modal{
+    width: 40px;
+    height: 40px;
+    top: 10%;
+  }
+  .modal_exit .img_box{
+    margin-top: 200px;
+    width: 95%;
+  }
   /* 가이드 리스트 */
   .guide_list{
     grid-template-columns: repeat(3, 1fr);
@@ -213,6 +222,15 @@
 }
 
 @media (max-width:420px) {
+  /* 헤더 */
+  .header_menu h1{
+    width: 210px;
+    height: 50px;
+  }
+  .header_menu h1 img{
+    width: 100%;
+    height: 100%;
+  }
   /* svisual */
   .svisual_wrap img{
     height: 100px;
@@ -237,6 +255,16 @@
   .guide_map div em{
     font-size: 9px;
     padding-left: 3px;
+  }
+  /* 모달 */
+  .modal_exit .close_modal{
+    top: 18%;
+  }
+  .modal_exit .img_box{
+    padding: 10px;
+  }
+  .modal_exit .img_box img{
+    transform: scale(1.1);
   }
   /* .active */
   .guide_map div.active{
