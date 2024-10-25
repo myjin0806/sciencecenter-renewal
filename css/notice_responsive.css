@@ -97,6 +97,9 @@
   
 
   /* 푸터 */
+  .footer_nav ul li{
+    font-size: 16px;
+  }
   .footer_sns ul{
     margin-left: 0;
   }
@@ -124,6 +127,13 @@
   }  
 }
 @media (max-width:420px) {
+    /* svisual */
+    .svisual_wrap img{
+      height: 100px;
+    }
+    .svisual_wrap h3{
+      font-size: 30px;
+    }
   /* 테이블 */
   #notice_table{
     display: grid;
@@ -232,7 +242,7 @@
     font-size: 12px;
   }
   .family_site #open_site{
-    width: 20%;
+    width: 25%;
     height: 40px;
     line-height: 40px;
     font-size: 12px;

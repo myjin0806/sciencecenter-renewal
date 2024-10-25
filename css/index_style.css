@@ -209,8 +209,8 @@ header{
   height: 90px;
   z-index: 30;
   transition: .5s;
+  overflow: hidden;
 }
-
 .header_inner{}
 .link_on{
   height: 40px;
@@ -271,7 +271,6 @@ header nav ul li a{
   color: var(--white);
   transition: .3s;
 }
-
 header .btn_box{
   display: inline-block;
   float: right;
@@ -302,6 +301,37 @@ header .btn_box{
 .search_btn:hover a, .site_map:hover a{
   
 }
+/* 헤더에 액티브 추가  */
+header::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  transition: .25s;
+}
+header.active::after{
+  top: 0;
+}
+header.active .header_menu h1 img.white_logo{
+  display: none;
+}
+header.active .header_menu h1 img.black_logo{
+  display: block;
+}
+header.active .link_on ul li a{
+  color: var(--dark-black);
+}
+header.active nav ul li a{
+  color: color: var(--dark-black);;
+}
+
+
+
 .site_map{
   width: 50px;
   height: 50px;
@@ -1897,6 +1927,7 @@ footer{
   border: 1px solid var(--light-gray);
   border-radius: 0 20px 20px 0;
   transition: .3s;
+  white-space: nowrap;
 }
 .family_site #open_site:hover{
   background-color: var(--light-gray);
@@ -1929,4 +1960,36 @@ footer{
   width: 87px;
   height: 59px;
   object-fit: cover;
+}
+
+
+/* 포인터 */
+.pointer{
+  position: relative;
+}
+.pointer::after{
+  content: '';
+  width: 21px;
+  height: 22px;
+  background: url(../images/pointer.png) 100% no-repeat;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  animation: point 1.5s infinite;
+  transform: translate(-50%, -50%);
+}
+.submenu_cont .pointer::after{
+  top: 85%;
+  right: 32%;
+  transform: translate(-50%, -50%);
+  animation: none;
+}
+@keyframes point {
+  0% , 100%{transform: translate(0, 0);}
+  50% {transform: translate(-10px, -10px);}
+}
+em.pointer::after{
+top: 85%;
+  right: -20px;
 }
