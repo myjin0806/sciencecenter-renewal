@@ -8,7 +8,7 @@
 > - 개발 : 20일(2024년 10월 6일 ~ 2024년 10월 25일)
 
 ## 💻배포 주소
-> [국립과천과학관.com](https://myjin0806.github.io/test01/)
+> [국립과천과학관.com](https://myjin0806.github.io/Project-site-renewal/)
 
 ## 📋깃허브 레포
 > https://github.com/myjin0806/test_01.git
