@@ -8,10 +8,10 @@
 > - 개발 : 20일(2024년 10월 6일 ~ 2024년 10월 25일)
 
 ## 💻배포 주소
-> [국립과천과학관.com](https://myjin0806.github.io/Project-site-renewal/)
+> [국립과천과학관.com](https://myjin0806.github.io/sciencecenter-renewal/)
 
 ## 📋깃허브 레포
-> https://github.com/myjin0806/test_01.git
+> https://github.com/myjin0806/sciencecenter-renewal.git
 
 ## ✍링크
 > - [브레인스토밍](https://www.figma.com/board/qONhyrVkiOOtcDxRyZgagv/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=k4E42O2KRVeqjK7U-1)<br>
