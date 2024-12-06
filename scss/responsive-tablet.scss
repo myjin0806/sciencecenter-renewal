@@ -1,0 +1,2301 @@
+// 이 scss는 태블릿 반응형 사이즈 만들때 쓰는 scss입니다.
+
+/* Import Local Scss Files */
+@import "variables", "reset", "font";
+
+@media screen and (max-width: 1700px){
+  /* header */
+  header{
+    .header-wrap{
+      .header-main{
+        .gnb{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  /* footer */
+  .footer-green-include{
+    footer{
+      .footer-top{
+        .footer-top-navi{
+          width: 80vw;
+        }
+      }
+      .footer-main{
+        padding: 0 9vw;
+  
+      }
+      .footer-bottom{
+        padding: 10px 9vw;
+      }
+    }
+  }
+  .footer-white-include{
+    footer{
+      .footer-top{
+        .footer-top-navi{
+          width: 80vw;
+        }
+      }
+      .footer-main{
+        padding: 0 9vw;
+  
+      }
+      .footer-bottom{
+        padding: 10px 9vw;
+      }
+    }
+  }
+  /* #### directions (directions.html) #### */
+  .directions{
+    .directions-inner{
+      width: 90vw;
+      padding: 0 4vw;
+      .directions-top{
+        .text{
+          .place{
+            margin-left: 2vw;
+          }
+          .location{
+            p{
+              i{
+                width: 1.5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px){
+  /* header */
+  header{
+    .header-wrap{
+      .header-top{
+        width: 100vw;
+        padding: 10px 10vw;
+        .top-banner{
+          width: 70vw;
+          margin : auto 0;
+        }
+      }
+    }
+  }
+  /* footer */
+  .footer-green-include{
+    footer{
+      .footer-top{
+        .footer-top-navi{
+          .items{
+            gap: 5vw;
+            .item{
+              a{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-white-include{
+    footer{
+      .footer-top{
+        .footer-top-navi{
+          .items{
+            gap: 5vw;
+            .item{
+              a{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  [class*=inner] {
+    width: 90%;
+    height: fit-content;
+  }
+  /* header */
+  header{
+    .header-wrap{
+      .header-top{
+        width: 100vw;
+        padding: 0;
+        .top-banner{
+          width: 90vw;
+          margin : auto 0;
+          span{
+            word-break: keep-all;
+          }
+          .right-menu{
+            display: none;
+          }
+        }
+      }
+    }
+    .header-search{
+      .header-search-main{
+        width: 80vw;
+        .header-search-searchbox{
+          width: 70vw;
+        }
+      }
+    }
+  }
+  /* follow cursor */
+  #follow-cursor{
+    display: none;
+  }
+  /* footer */
+  .footer-green-include{
+    footer{
+      .footer-top{
+        .footer-top-navi{
+          .items{
+            gap: 10vw;
+          }
+        }
+      }
+    }
+  }
+  .footer-white-include{
+    footer{
+      .footer-top{
+        .footer-top-navi{
+          .items{
+            gap: 10vw;
+          }
+        }
+      }
+    }
+  }
+  /* breadcrumb */
+  .breadcrumb-wrap{
+    width: 90vw;
+  }
+  /* #### Section : Main #### */
+  .main-section{
+    .zoom-section{
+      display: none;
+    }
+    .main-visual-inner{
+      .today-info{
+        width: 90vw;
+        .waether{ 
+          #weather-icon{
+            margin-right: 15px;
+          }
+          .waether-item{
+            gap: 10px;
+            h3{
+              font-size: 17px;
+            }
+          }
+        }
+        .business-hour{
+          margin-right: 30px;
+          h3{
+            font-size: 17px;
+            padding: 10px;
+            margin: 0;
+          }
+          h4{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  /* #### Section : Sub1 #### */
+  .sub-section-01{
+    margin-top: 40px;
+    padding-top: 0px;
+    width: 100%;
+    height: 900px;
+    .sec01-overlay{
+      display: none;
+    }
+    .sub-section-01-inner{
+      h2{
+        font-size: 36px;
+      }
+      .content-wrap{
+        position: relative;
+        justify-content: space-between;
+        .ticket{
+          .ticket-wrap{
+            padding-bottom: 118px;
+          }
+        }
+        .text-box{
+          width: calc(100% - 380px);
+          position: relative;
+          height: fit-content;
+          padding: 40px 12px;
+          margin-top: 12px;
+          i.bi-x-lg{
+            display: none;
+          }
+          h3{
+            text-align: center;
+            margin-bottom: 12px;
+          }
+          h4{
+            font-size: 15px;
+            margin-bottom: 12px;
+          }
+          p{
+            font-size: 14px;
+          }
+          button{
+            margin: 0 auto;
+          }
+        }
+      }
+      .showInfo{
+        display: none;
+      }
+    }
+  }
+  /* #### Section : Sub2 #### */
+  .sub-section-02{
+    width: 100%;
+    height: 1250px;
+    .sub-section-02-inner{
+      width: 90%;
+      margin: auto;
+      .main-text{
+        span{
+          font-size: 16px;
+        }
+        h2{
+          font-size: 28px;
+          font-weight: bold;
+        }
+      }
+      .main-contents{
+        flex-direction: column;
+        .responsive-tabs{
+          display: block;
+          width: 80%;
+          margin: auto;
+          .tab-buttons{
+            display: flex;
+            justify-content: space-between;
+            .tab-button{
+              flex-basis: 27.5%;
+              height: 57px;
+              background-color: $light-black;
+              border-radius: 20px;
+              border: none;
+              font-size: 20px;
+              font-weight: 900;
+              color: $white;
+            }
+            & .active {
+              &[data-tab="animal"]{
+                background-color: #96D7FF;
+              }
+              &[data-tab="nature"]{
+                background-color: #B6E2FF;
+              }  
+              &[data-tab="fun"]{
+                background-color: #63A6EA;
+              }
+            }
+          } 
+        }
+        .tab-contents{
+          display: flex;
+          justify-content: center;
+          .animal, .nature, .fun{
+            width: 100%;
+            height: fit-content;
+            position: absolute;
+            .title{
+              display: none;
+            }
+            .wrap{
+              height: 685px;
+              margin-top: 23px;
+              .box{
+                display: none;
+              }
+              .bg{
+                width: 100%;
+                border-radius: 25px;
+                height: 85%;
+              }
+              .text{
+                margin-top: 0px;
+                margin-left: 0;
+                padding-left: 45px;
+                .slogan{
+                  padding-top: 82px;
+                  font-size: 32px;
+                }
+                .detail{
+                  font-size: 16px;
+                }
+                p{
+                  width: 100%;
+                  margin-top: 62px;
+                  a{
+                    white-space: nowrap;
+                    width: 25%;
+                    height: 40px;
+                    font-size: 1em;
+                    line-height: 40px;
+                    margin-right: 20px;
+                  }
+                }
+              }
+            }
+          }
+          .animal{
+            .wrap{
+              .animal-bg{
+                background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/section_02/section_02-01\(hover\).jpg);
+              }
+              .animal-icon{
+                width: 362px; 
+                height: 242px;
+                bottom: 10%;
+              }
+            }
+          }
+          .nature{
+            .wrap{
+              .nature-bg{
+                background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/section_02/section_02-02\(hover\).jpg);
+              }
+              .nature-icon{
+                width: 263px; 
+                height: 287px;
+                bottom: 10%;
+              }
+            }
+          }
+          .fun{
+            .wrap{
+              .fun-bg{
+                background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/section_02/section_02-03\(hover\).jpg); 
+              }
+              .fun-icon{
+                width: 302px; 
+                height: 161px;
+                bottom: 6%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* #### Section : Sub3 #### */
+  .sub-section-03{
+  width: 100%;
+  margin: auto;
+  height: 840px;
+  padding-top: 0;
+  background: linear-gradient($white 5%, #C0EFF9);
+  .sub-section-03-inner{
+    width: 80%;
+    margin: auto;
+    }
+  .review-main-text{
+      text-align: center;
+      h2{
+        max-width: 480px;
+        font-size: 2.5em;
+      }
+  }
+  .review-slider-wrap{
+    height: 567px;
+    .review-slides{
+      .review-slide{
+        margin-top: 110px;
+        &:first-child{
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+  }
+  /* #### Section : Sub4 #### */
+  .sub-section-04{
+    width: 100%;
+    height: 620px;
+    .sub-section-04-inner{
+      display: block;
+      justify-content: center;
+      .schedule-information-wrap{
+        margin-top: 80px;
+        h2{
+          font-size: 36px;
+        }
+        .calendar-wrap{margin: auto;
+          max-width: 768px;
+          padding: 10px;
+          justify-content: space-between;
+          .small-character{
+            bottom: -50px;
+            left: 80%;
+            transform: scale(-1, 1);
+          }
+          #calendar, #schedule{
+            width: 49.8%;
+            height: 300px;
+            padding: 20px;
+            &::before{
+              width: 107%;
+              height: 107%;
+            }
+          }
+          #calendar{
+            margin-left: 0px;
+            .header{
+              margin-bottom: 16px;
+              #month-year{
+                font-size: 24px;
+                em{
+                  font-size: 15px;
+                }
+              }
+            }
+            .weekdays{
+              grid-gap: 0.008%;
+              div{
+                font-size: 11px;
+              }
+            }
+            .days{
+              grid-column-gap: 0.008%;
+              div{
+                padding: 9px 0.012%;
+                font-size: 14px;
+                &.event-day::after{
+                  width: 26px;
+                  height: 26px;
+                }
+              }
+            }
+          }
+          #schedule{
+            #schedule-date{
+              font-size: 20px;
+            }
+            #schedule-list{
+              li{
+                font-size: 12px;
+                margin-bottom: 10px;
+                span{
+                  font-size: 14px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sns-wrap{
+        display: none;
+      }
+    }
+  }
+
+  /* ###### Sub Page ###### */
+  /* #### attraction (attraction.html) #### */
+  .attraction-banner{
+    img{
+      width: 100%;
+      margin-top: 130px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .attraction-inner{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: height 0.3s ease-in-out;
+    .attraction-options{
+      width: 90%;
+      height: 362px;
+      margin-top: -63px;
+      .options-text{
+        h2{
+          font-size: 28px;
+        }
+      }
+      .options-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #attraction-form{
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          .top-options-wrap{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            .options-num, .options-chk{
+              margin-top: 0px;
+              gap: 50px;
+            .option{
+              max-width: 45%;
+            }
+          }
+          .options-num{
+            margin-top: 32px;
+            margin-left: 0px;
+            input{
+              background-color: transparent;
+              &[type=text]{
+                width: 73%;
+              }
+            }
+            .suv{
+              font-size: 14px;
+            }
+          }
+          .options-chk{
+            margin-top: 27px;
+            position: relative;
+            .option{
+              .suv{
+                margin-left: -40%;
+                font-size: 14px;
+              }       
+            }       
+          }
+          }
+          .bottom-options-wrap{
+            .btn-container{
+              margin-top: 36px;
+              margin-bottom: 52px;
+              .view{
+                width: 180px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rides-container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 47px;
+      padding: 80px 0;
+      .ride-item{
+        width: 100%;
+        height: 330px;
+        &:nth-child(-n+9) {
+          display: block;
+        }
+        img{
+          &:hover{
+            transform: scale(1);
+          }
+        }
+      }
+    }
+    .readmore{
+      @include btn-more(280px, 90px, 32px);
+    }
+  }
+  /* #### serviceSuspension (serviceSuspension.html) #### */
+  .serviceSuspension-mainsection{
+    margin-top: 70px;
+    .calendar-banner {
+      margin-left: 5%;
+      width: auto;
+      overflow-x: auto; 
+      -webkit-overflow-scrolling: touch;  // 모바일에서 스크롤 부드럽게
+      justify-content: flex-start;
+      .calendar-items{
+        gap: 24px;
+        .day{
+          width: 130px;
+          height: 90px;
+          .today{
+            width: 75px;
+            height: 24px;
+            top: -10px;
+            font-weight: normal;
+            font-size: 14px;
+          }
+          .label{
+            margin-top: 4px;
+            font-size: 14px;
+            letter-spacing: -1%;
+          }
+          .value{
+            font-size: 28px;
+            letter-spacing: -1%;
+          }
+        }
+      }
+    }
+    .suspension-banner{
+      height: 100px;
+      width: 90vw;
+      margin: 40px auto;
+      .suspension-info{
+      font-size: 28px;
+      word-break: keep-all;
+      letter-spacing: 2px;
+      }
+    }
+  }
+  /* #### ticket-info (ticket-info.html)####*/
+  .ticket-info{
+    .ticket-info-wrap{
+      width: 90%;
+      .ticket-info-cards{
+        height: 480px;
+        .ticket-card{
+          width: 30%;
+          height: 480px;
+          .card-obverse{
+            .text{
+              h5{
+                font-size: 16px;
+              }
+              h4{
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .coalition-cards-wrap{
+      .cards-text-box{
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+  /* #### ticket-rsv (ticket-rsv.html)####*/
+  .ticket-rsv{
+    .ticket-rsv-wrap{
+      width: 90%;
+      .ticket-rsv-box{
+        >div{
+          width: 48%;
+        }
+        .ticket-rsv-info{
+          .info-header{
+            h3{
+              font-size: 22px;
+            }
+          }
+          .info-list{
+            h4{
+              font-size: 22px;
+            }
+            p{
+              font-size: 18px;
+            }
+            span, h5{
+              font-size: 16px;
+            }
+          }
+        }
+        .ticket-rsv-lists{
+          .ticket-rsv-list{
+            .ticket-rsv-header{
+              span{
+                font-size: 26px;
+                em{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .btn-wrap{
+            button{
+              width: 47%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* #### ticket-cart (ticket-cart.html)####*/
+  .ticket-cart{
+    .ticket-cart-wrap{
+      width: 90%;
+      .cart-wrap{
+        width: calc(100% - 350px);
+        h2{
+          font-size: 32px;
+        }
+        .cart-items{
+          .cart-item{
+            .cart-overview{
+              .cart-overview-header{
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+      .payment{
+        width: 330px;
+        .price-total-wrap{
+          h2{
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+} 
+
+@media screen and (max-width: 1024px) {
+  /* header */
+  header{
+    .header-wrap{
+      height: 170px;
+      .header-top{
+        height: 40px;
+        .top-banner{
+          height: 22px;
+          .logos{
+            img{
+              height: 11px;
+              width: auto;
+              min-width: 30px;
+            }
+          }
+          .right-menu{
+            display: none;
+          }
+        }
+      }
+      .header-main {
+        .main-logo{
+          padding-top: 55px;
+          padding-left: 5vw;
+          a{
+            img{
+            width: 250px;
+            height: 53px;
+            }
+          }
+        
+        }
+        .gnb{
+          display: none;
+          .item{
+            display: none;
+          }
+        }
+        .right-menu{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          margin-right: 5vw;
+          .right-menu-items{
+            display: none;
+          }
+          .right-menu-mobile-items{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: min-content;
+            margin-top:15px;
+            gap: 10px;
+            .rows-wrap{
+              display: flex;
+              gap: 30px;
+            }
+            .menu-item{
+              word-break: keep-all;
+              a{
+                font-size: 13px;
+              }
+            }
+            .icon-hamburgur{
+              margin-left: auto;
+              margin-top: 10px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* footer */
+  .footer-green-include{
+    footer{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      .footer-top{
+        .footer-top-navi{
+          height: auto;
+          border: none;
+          .items{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            .item{
+              border-bottom: 2px solid $white;
+              width: 90vw;
+              height: 40px;
+              padding: 0px 3vw;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+        margin-bottom: 70px;
+      }
+      .footer-main{
+        padding: 0 5vw;
+        .footer-address{
+          gap: 5px;
+        }
+      }
+      .footer-bottom{
+        padding: 10px 5vw;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .footer-white-include{
+    footer{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      .footer-top{
+        .footer-top-navi{
+          border: none;
+          height: auto;
+          .items{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            .item{
+              border-bottom: 2px solid $deep-green;
+              width: 90vw;
+              height: 40px;
+              padding: 0px 3vw;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+        margin-bottom: 70px;
+      }
+      .footer-main{
+        padding: 0 5vw;
+        .footer-address{
+          gap: 5px;
+        }
+      }
+      .footer-bottom{
+        padding: 10px 5vw;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  /* #### Section : Main #### */
+  .main-section{
+    .main-visual-inner{
+      .main-text{
+        position: absolute;
+        padding: 0;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h2{
+          font-size: 64px;
+          text-align: center;
+          span{
+            font-size: 64px;
+          }
+        }
+      }
+      .today-info{
+        .waether{ 
+          #weather-icon{
+            margin-right: 1px;
+          }
+        }
+        .business-hour{
+          h3{
+            font-size: 17px;
+            padding: 10px;
+            margin: 0;
+          }
+          h4{
+            word-break: keep-all;
+          }
+        }
+      }
+    }
+  }
+  /* #### Section : Sub1 #### */
+  .sub-section-01{
+    .sub-section-01-inner{
+      .content-wrap{
+        .text-box{
+          padding: 20px 10px;
+          h3{
+            margin-bottom: 16px;
+          }
+          h4{
+            margin-bottom: 16px;
+          }
+          p{
+            line-height: 170%;
+            margin-bottom: 16px;
+          }
+          button{
+            font-size: 22px;
+            height: 52px;
+          }
+        }
+      }
+    }
+  }
+  /* #### serviceSuspension (serviceSuspension.html) #### */
+  .serviceSuspension-subsection{
+    .weather-wrap{
+      gap: 40px;
+        .weather-box{
+          width: 43vw;
+          height: 580px;
+          padding: 25px 15px;
+          .left-top{
+            .left-top-left{
+              img{
+                scale: 0.8;
+              }
+              h3{
+                font-size: 14px;
+                img{
+                  scale: 0.8;
+                }
+              }
+            }
+            .left-top-right{
+              h3{
+                font-size: 14px;
+              }
+            }
+          }
+          .left-main{
+            .main-weather{
+              .main-weather-icon{
+                width: 20vw;
+                height: auto;
+                img{
+                  width: 20vw;
+                  height: auto;
+                  }
+              }
+              .main-weather-info{
+                .main-weather-temp{
+                  h3{
+                    font-size: 48px;
+                  }
+                  .weather-desc{
+                    font-size: 16px;
+                  }
+                }
+                .main-weather-subinfo{
+                  margin-top: 30px;
+                  div{
+                    img{
+                      width: 23px;
+                      height: 23px;
+                    }
+                    h5{
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .left-bottom{
+            margin-top: 20px;
+            .bottom-items{
+              .bottom-item{
+                padding: 12px;
+                width: 12vw;
+                height: 120px;
+                border-radius: 20px;
+                .weather-icon{
+                  margin: 5px;
+                  img{
+                    width: 38px;
+                    height: auto;
+                  }
+                }
+                .temp{
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+          .right-top{
+            .top-title{
+              h3{
+                font-size: 20px;
+              }
+            }
+            .today-detail-info{
+              margin: 15px auto;
+              width: 40vw;
+              height: auto;
+              min-height: 165px;
+              border-radius: 20px;
+              .info-left,.info-right{
+                gap: 25px;
+                .item{
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .right-bottom{
+            .bottom-title{
+              h3{
+                font-size: 20px;
+              }
+            }
+            .bottom-main{
+              .weather-items{
+                gap: 1vw;
+                margin: 10px auto;
+                justify-content: center;
+                .bottom-item{
+                  padding: 1vw;
+                  width: 12vw;
+                  height: auto;
+                  min-height: 120px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  .day{
+                    h5{
+                      font-size: 12px;
+                    }
+                  }
+                  .weather-icon{
+                    margin: 0px;
+                    img{
+                      width: 30px;
+                      height: 30px;
+                    }
+                  }
+                  .temp{
+                    margin-top: 0;
+                    h4{
+                      font-size: 13px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+  /* #### directions (directions.html) #### */
+  .directions{
+    .directions-inner{
+      .directions-top{
+        h1{
+          font-size: 40px;
+        }
+        .text{
+          .place{
+            margin-left: 2vw;
+            font-size: 28px;
+          }
+          .location{
+            padding-right: 2vw;
+            line-height: 0.5vh;
+            height: 40%;
+            margin: auto;
+            justify-content: space-around;
+            flex-direction: column;
+            p{
+              font-size: 16px;
+              &::after{
+                display: none;
+              }
+              i{
+                width: 1.5vw;
+              }
+            }
+          }
+        }
+      }
+      .tab-container{
+        .tabs{
+          height: 70px;
+          .tab-button{
+            font-size: 32px;
+          }
+        }
+      }
+      .directions-bottom{
+        padding: 30px;
+        .bottom-box-inner{
+          .inner-traffic{
+            .traffic-items{
+              .traffic-item{
+                .traffic-title{
+                  h3{
+                    font-size: 28px;
+                  }
+                }
+                .traffic-info-wrap{
+                  .traffic-info{
+                    
+                    word-break: keep-all;
+                    .info-circle{
+                      .circle-text{
+                        font-size: 17px;
+                      }
+                    }
+                  }
+                }
+              }
+              .traffic-item:nth-child(3){
+                .traffic-info{
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .inner-parking{
+           .parking-main{
+            .main-table{
+              .table-title {
+                h3:nth-of-type(1) {
+                  width: 65%;
+                }
+                h3:nth-of-type(2) {
+                  width: 35%;
+                }
+              }
+            
+              .table-body{
+                .table-row{
+                  padding: 15px 0;
+                  border-bottom: 2px dashed #d3d3d3;
+                  .table-left{
+                    width: 65%;
+                    word-break: keep-all;
+                  }
+                  .table-right{
+                    width: 33%;
+                    word-break: keep-all;
+                  }
+                }
+              }
+            }
+           }
+          }
+        }
+      }
+    }
+  }
+  /* #### ticket-rsv (ticket-rsv.html)####*/
+  .ticket-rsv{
+    .ticket-rsv-wrap{
+      .ticket-rsv-box{
+        .ticket-rsv-lists{
+          .ticket-rsv-list{
+            .ticket-rsv-header{
+              img{
+                width: 120px;
+                height: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* #### ticket-cart (ticket-cart.html)####*/
+  .ticket-cart{
+    .ticket-cart-wrap{
+      .cart-wrap{
+        .cart-items{
+          .cart-item{
+            .thum{
+              img{
+                width: 120px;
+                height: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:481px) and (max-width:768px){
+  /* header */
+  header{
+    .header-wrap{
+      height: 160px;
+      .header-top{
+        .top-banner{
+          span{
+            font-size: 10px;
+          }
+        }
+      }
+      .header-main{
+        .main-logo{
+          padding-left: 40px;
+          padding-right: 0;
+        }
+        .right-menu{
+          margin-right: 40px;
+          .right-menu-mobile-items{
+            .rows-wrap{
+              gap: 10px;
+            }
+          }
+        }
+      }
+    } 
+    .header-side-menu{
+      top: 160px;
+      .side-menu-wrap{
+        display: block;
+        top: 160px;
+      }
+    }
+    }
+  /* footer */
+  .footer-green-include{
+    footer{
+      z-index: 1;
+      padding-top: 20px;
+      .footer-top{
+        .footer-top-navi{
+          .items{
+            .item{
+              a{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .footer-main{
+        .footer-logo{
+          width: 82px;
+          height: 82px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .footer-address{
+          h4,h5{
+            font-size: 12px;
+          }
+        }
+      }
+      .footer-bottom{
+        .bottom-banner{
+          padding: 5px 15px;
+          span{
+            margin-left: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .footer-white-include{
+    footer{
+      z-index: 1;
+      padding-top: 20px;
+      .footer-top{
+        .footer-top-navi{
+          .items{
+            .item{
+              a{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .footer-main{
+        .footer-logo{
+          width: 82px;
+          height: 82px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .footer-address{
+          h4,h5{
+            font-size: 12px;
+          }
+        }
+      }
+      .footer-bottom{
+        .bottom-banner{
+          padding: 5px 15px;
+          span{
+            margin-left: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  /* breadcrumb-wrap */
+  .breadcrumb-wrap{
+    top: 450px;
+    width: 90%;
+    height: 40px;
+    .breadcrumb{
+      line-height: 40px;
+      >a.home{
+        width: 30px;
+        height: 100%;
+        img{
+          width: 13px;
+          object-fit: cover;
+        }
+      }
+      >li{
+        font-size: 15px;
+        width: 180px;
+        >a{
+          padding: 0 20px;
+          height: 40px;
+          &::after{
+            width: 18px;
+            height: 13px;
+            right: 14px;
+          }
+        }
+        .depth{
+          padding: 0px 10px 10px 10px;
+          li{
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+  /* quick menu */
+  .quick-menu{
+    display: none;
+  }
+  /* go to top */
+  #go-to-top-fox{
+    display: none;
+  }
+  /* #### Section : Main #### */
+  .main-section{
+  .ferris-wheel-wrapper{
+    scale: 0.7;
+    top: 150px;
+    right: -200px;
+  }
+  .main-image{
+    background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/main/mainVisual_main_responsive.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    img{
+      display: none;
+    }
+  }
+  .main-visual-inner{
+    .main-text{
+      position: absolute;
+      padding: 0;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      h2{
+        font-size: 48px;
+        text-align: center;
+        span{
+          font-size: 48px;
+          letter-spacing: -7px;
+        }
+      }
+    }
+    .main-popup{
+      display: none;
+    }
+    .today-info{
+      .waether{ 
+        #weather-icon{
+          width: 45px;
+          height: 45px;
+        }
+      }
+      .business-hour{
+        flex-direction: column;
+        gap: 5px;
+        h3{
+          font-size: 15px;
+          padding: 7px 15px;
+        }
+      }
+    }
+  }
+  }
+  /* #### Section : Sub1 #### */
+  .sub-section-01{
+    margin-top: 40px;
+    padding-top: 0px;
+    width: 100%;
+    height: 900px;
+    .sec01-overlay{
+      display: none;
+    }
+    .sub-section-01-inner{
+      h2{
+        font-size: 36px;
+      }
+      .content-wrap{
+        position: relative;
+        justify-content: center;
+        .ticket{
+          .ticket-wrap{
+            padding-bottom: 118px;
+          }
+        }
+        .text-box{
+          display: none;
+          z-index: 10;
+          position: absolute;
+          width: 75%;
+          height: fit-content;
+          border-radius: 16px;
+          padding: 40px 20px;
+          margin-top: 12px;
+          &::after{
+            display: none;
+          }
+          i.bi-x-lg{
+            display: inline-block;
+          }
+          h3{
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          h4{
+            font-size: 15px;
+            margin-bottom: 16px;
+          }
+          p{
+            font-size: 14px;
+          }
+          button{
+            margin: 0 auto;
+          }
+        }
+      }
+      .showInfo{
+        @include btn-more(280px,82px, 32px);
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+  /* #### Section : Sub2 #### */
+  .sub-section-02{
+    width: 100%;
+    height: 1250px;
+    .sub-section-02-inner{
+      width: 90%;
+      margin: auto;
+      .main-text{
+        span{
+          font-size: 16px;
+        }
+        h2{
+          font-size: 28px;
+          font-weight: bold;
+        }
+      }
+      .main-contents{
+        flex-direction: column;
+        .responsive-tabs{
+          display: block;
+          width: 80%;
+          margin: auto;
+          .tab-buttons{
+            display: flex;
+            justify-content: space-between;
+            .tab-button{
+              flex-basis: 27.5%;
+              height: 57px;
+              background-color: $light-black;
+              border-radius: 20px;
+              border: none;
+              font-size: 20px;
+              font-weight: 900;
+              color: $white;
+            }
+            & .active {
+              &[data-tab="animal"]{
+                background-color: #96D7FF;
+              }
+              &[data-tab="nature"]{
+                background-color: #B6E2FF;
+              }  
+              &[data-tab="fun"]{
+                background-color: #63A6EA;
+              }
+            }
+          } 
+        }
+        .tab-contents{
+          display: flex;
+          justify-content: center;
+          .animal, .nature, .fun{
+            width: 80%;
+            height: fit-content;
+            position: absolute;
+            .title{
+              display: none;
+            }
+            .wrap{
+              height: 685px;
+              margin-top: 23px;
+              .box{
+                display: none;
+              }
+              .bg{
+                width: 100%;
+                border-radius: 25px;
+                height: 85%;
+              }
+              .text{
+                margin-top: 0px;
+                margin-left: 0;
+                padding-left: 45px;
+                .slogan{
+                  padding-top: 82px;
+                  font-size: 32px;
+                }
+                .detail{
+                  font-size: 16px;
+                }
+                p{
+                  width: 100%;
+                  margin-top: 62px;
+                  a{
+                    white-space: nowrap;
+                    width: 40%;
+                    height: 40px;
+                    font-size: 1.2em;
+                    line-height: 40px;
+                    margin-right: 20px;
+                  }
+                }
+              }
+            }
+          }
+          .animal{
+            .wrap{
+              .animal-bg{
+                background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/section_02/section_02-01\(hover\).jpg);
+              }
+              .animal-icon{
+                width: 362px; 
+                height: 242px;
+                bottom: 10%;
+              }
+            }
+          }
+          .nature{
+            .wrap{
+              .nature-bg{
+                background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/section_02/section_02-02\(hover\).jpg);
+              }
+              .nature-icon{
+                width: 263px; 
+                height: 287px;
+              }
+            }
+          }
+          .fun{
+            .wrap{
+              .fun-bg{
+                background-image: url(/seoulchildrensgrandpark_Portfolio/images/mainpage/section_02/section_02-03\(hover\).jpg); 
+              }
+              .fun-icon{
+                width: 302px; 
+                height: 161px;
+                bottom: 6%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* #### Section : Sub3 #### */
+  .sub-section-03{
+    width: 100%;
+    margin: auto;
+    height: 840px;
+    padding-top: 0;
+    background: linear-gradient($white 5%, #C0EFF9);
+    .sub-section-03-inner{
+      width: 80%;
+      margin: auto;
+      }
+    .review-main-text{
+        text-align: center;
+        h2{
+          max-width: 480px;
+          font-size: 2em;
+        }
+    }
+    .review-slider-wrap{
+      margin-top: -20px;
+      height: 600px;
+      .review-slides{
+        .review-slide{
+          margin-top: 110px;
+          &:first-child{
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+  /* #### Section : Sub4 #### */
+  .sub-section-04{
+    width: 100%;
+    height: 100%;
+    .sub-section-04-inner{
+      display: block;
+      .schedule-information-wrap{
+        margin-top: 80px;
+        h2{
+          font-size: 36px;
+        }
+        .calendar-wrap{
+          padding: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          .small-character{
+            bottom: -50px;
+            left: 80%;
+            transform: scale(-1, 1);
+          }
+          #calendar, #schedule{
+            width: 49.8%;
+            height: 300px;
+            padding: 20px;
+            &::before{
+              width: 107%;
+              height: 107%;
+            }
+          }
+          #calendar{
+            margin-left: 0px;
+            .header{
+              margin-bottom: 16px;
+              #month-year{
+                font-size: 24px;
+                em{
+                  font-size: 15px;
+                }
+              }
+            }
+            .weekdays{
+              grid-gap: 0.008%;
+              div{
+                font-size: 11px;
+              }
+            }
+            .days{
+              grid-column-gap: 0.008%;
+              div{
+                padding: 9px 0.012%;
+                font-size: 14px;
+                &.event-day::after{
+                  width: 26px;
+                  height: 26px;
+                }
+              }
+            }
+          }
+          #schedule{
+            #schedule-date{
+              font-size: 20px;
+            }
+            #schedule-list{
+              li{
+                font-size: 12px;
+                margin-bottom: 10px;
+                span{
+                  font-size: 14px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sns-wrap{
+        display: none;
+      }
+    }
+  }
+  /* ###### Sub Page ###### */
+  /* #### attraction (attraction.html) #### */
+  .attraction-banner{
+    img{
+      width: 100%;
+      margin-top: 130px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .attraction-inner{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: height 0.3s ease-in-out;
+    .attraction-options{
+      width: 90%;
+      height: 362px;
+      margin-top: -63px;
+      .options-text{
+        h2{
+          font-size: 28px;
+        }
+      }
+      .options-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #attraction-form{
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          .top-options-wrap{
+            width: 100%;
+            padding: 0 16px;
+            gap: 30px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            .options-num, .options-chk{
+              margin-top: 0px;
+              gap: 50px;
+            .option{
+              max-width: 45%;
+            }
+          }
+          .options-num{
+            margin-top: 32px;
+            margin-left: 0px;
+            overflow: hidden;
+            input{
+              background-color: transparent;
+              &[type=text]{
+                width: 70%;
+              }
+            }
+            .suv{
+              font-size: 14px;
+            }
+          }
+          .options-chk{
+            margin-top: 27px;
+            position: relative;
+            .option{
+              .suv{
+                padding-left: 75px;
+                font-size: 14px;
+              }       
+            }       
+          }
+          }
+          .bottom-options-wrap{
+            .btn-container{
+              margin-top: 36px;
+              margin-bottom: 52px;
+              .view{
+                width: 180px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rides-container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 47px;
+      padding: 80px 0;
+      .ride-item{
+        width: 100%;
+        height: 330px;
+        &:nth-child(-n+9) {
+          display: block;
+        }
+      }
+    }
+    .readmore{
+      @include btn-more(280px, 90px, 32px);
+    }
+  }
+ /* #### serviceSuspension (serviceSuspension.html) #### */
+  .serviceSuspension-banner{
+    img{
+      width: 100%;
+      margin-top: 160px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .serviceSuspension-mainsection{
+    .suspension-banner{
+      height: 90px;
+      border-radius: 20px;
+      margin: 30px auto;
+      .suspension-info{
+        font-size: 24px;
+        h3{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  /* #### directions (directions.html) #### */
+  .directions-banner{
+    img{
+      width: 100%;
+      margin-top: 160px;
+      height: 300px;
+      object-position: 60%;
+    }
+  }
+  .directions{
+    .directions-inner{
+      .directions-top{
+        .text{
+          .place{
+            width: 60%;
+            font-size: 24px;
+          }
+          .location{
+            p{
+              font-size: 13px;
+              line-height: 20px;
+              text-align: center;
+              word-break: keep-all;
+            }
+          }
+        }
+      }
+      .directions-bottom{
+        height: 570px;
+        .bottom-box-inner{
+          height: 520px;
+          min-height: 0;
+          overflow-y: scroll;
+          .inner-traffic{
+            .traffic-items{
+              .traffic-item{
+                .traffic-title{
+                  justify-content: space-between;
+                  h3{
+                    font-size: 24px;
+                  }
+                }
+                .traffic-info-wrap{
+                  .traffic-info{
+                    gap: 15px;
+                    .info-radius{
+                      width: 50px;
+                      padding: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .inner-parking{
+            .parking-top{
+              flex-direction: column;
+              gap: 40px;
+              .top-left{
+                width: 100%;
+                .left-title{
+                  font-size: 24px;
+                  margin-bottom: 15px;
+                }
+              }
+              .top-right{
+                width: 100%;
+                .right-title{
+                  font-size: 24px;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* #### ticket-info (ticket-info.html)####*/
+  .ticket-info{
+    width: 100%;
+    padding-top: 160px;
+    @at-root .svisual-wrap{
+      height: 300px;
+      img{
+        object-position: 34%;
+      }
+    }
+    @at-root .breadcrumb-wrap{
+      top: 440px;
+      width: 90%;
+      height: 40px;
+      .breadcrumb{
+        line-height: 40px;
+        >a.home{
+          width: 30px;
+          height: 100%;
+          img{
+            width: 13px;
+            object-fit: cover;
+          }
+        }
+        >li{
+          font-size: 15px;
+          width: 180px;
+          >a{
+            padding: 0 20px;
+            height: 40px;
+            &::after{
+              width: 18px;
+              height: 13px;
+              right: 14px;
+            }
+          }
+          .depth{
+            padding: 0px 10px 10px 10px;
+            li{
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .ticket-info-wrap{
+      width: 100%;
+      .ticket-info-text{
+        margin-top: 90px;
+        p{
+          margin-top: 24px;
+          font-size: 20px;
+        }
+      }
+      .ticket-info-cards{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 40px;
+        .ticket-card{
+          min-width: 390px;
+          position: relative;
+          top: 0px;
+          opacity: 1;
+          &.big-5-ticket{
+            transform: rotate(0);
+            &.move{
+              transform: rotate(0) translateX(0);
+            }
+          }
+          &.group-ticket{
+            transform: rotate(0);
+            &.move{
+              transform: rotate(0) translateX(0);
+            }
+          }
+        }
+      }
+      button{
+        margin-bottom: 80px;
+      }
+      .ticket-info-icons{
+        margin-top: 80px;
+      }
+    }
+    .coalition-cards-wrap{
+      margin-top: 120px;
+      .cards-text-box{
+        width: 90%;
+        margin: auto;
+        h3{
+          margin-top: 12px;
+          margin-bottom: 20px;
+        }
+        .card-info{
+          width: 100%;
+          margin-top: 50px;
+          font-size: 14px;
+          li{
+            &::before{
+              top: 7px;
+            }
+          }
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  /* #### ticket-rsv (ticket-rsv.html)####*/
+  .ticket-rsv{
+    width: 100%;
+    padding-top: 160px;
+    .ticket-rsv-wrap{
+      width: 90%;
+      padding-top: 90px;
+      h2{
+        font-size: 36px;
+      }
+      .ticket-rsv-box{
+        flex-direction: column-reverse;
+        justify-content: center;
+        >div{
+          width: 100%;
+        }
+        .ticket-rsv-info{
+          margin-top: 60px;
+          .info-header{
+            height: 100px;
+            h3{
+              line-height: 100px;
+              font-size: 28px;
+            }
+          }
+        }
+        .ticket-rsv-lists{
+          .ticket-rsv-list{
+            .ticket-rsv-header{
+              img{
+                width: 158px;
+                height: 130px;
+              }
+            }
+          }
+          .btn-wrap{
+            button{
+              font-size: 20px;
+              width: 48%;
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* #### ticket-cart (ticket-cart.html)####*/
+  .ticket-cart{
+    width: 100%;
+    padding-top: 160px;
+    .ticket-cart-wrap{
+      width: 90%;
+      flex-direction: column;
+      .cart-wrap{
+        width: 100%;
+        h2{
+          text-align: center;
+        }
+        .cart-items{
+          .cart-item{
+            padding: 20px 0;
+            .thum{
+              width: 120px;
+              height: 120px;
+            }
+            .cart-overview{
+              padding-left: 12px;
+              .cart-overview-header{
+                h4{
+                  font-size: 26px;
+                  font-weight: normal;
+                }
+              }
+            }
+          }
+        }
+      }
+      .payment{
+        padding: 20px 18%;
+        margin-top: 60px;
+        width: 100%;
+        .price-total-wrap{
+          h2{
+            text-align: center;
+          }
+          .mobile-confirm-wrap{
+            margin-top: 60px;
+            >div{
+              gap: 20px;
+            }
+          }
+          .payment-method-wrap{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 10px;
+            h3{
+              grid-column: 1/-1;
+            }
+            >div{
+              width: 100%;
+              margin-bottom: 0;
+              .free-interest{
+                display: none;
+              }
+              label{
+                white-space: nowrap;
+              }
+              &:nth-child(2){
+                grid-column: 1/2;
+                grid-row: 2/3;
+              }
+              &:nth-child(3){
+                grid-column: 1/2;
+                grid-row: 3/4;
+              }
+              &:nth-child(4){
+                grid-column: 1/2;
+                grid-row: 4/5;
+              }
+              &:nth-child(5){
+                grid-column: 2/3;
+                grid-row: 2/3;
+              }
+              &:nth-child(6){
+                grid-column: 2/3;
+                grid-row: 3/4;
+              }
+            }
+          }
+          .btn-payment-final{
+            width: 80%;
+            margin: 0px 5%;
+          }
+        }
+      }
+    }
+  }
+} 
+
+// 날씨 페이지 //
+@media screen and (max-width: 660px) {
+  /* #### serviceSuspension (serviceSuspension.html) #### */
+  .serviceSuspension-subsection{
+    .weather-wrap{
+      flex-direction: column;
+      align-items: center;
+      .weather-box{
+        width: 90vw;
+        height: auto;
+        .left-main{
+          .main-weather{
+            .main-weather-icon{
+              width: 200px;
+              height: 200px;
+              img{
+                width: 200px;
+                height: 200px;
+              }
+            }
+          }
+        }
+        .left-bottom{
+          .bottom-items{
+            gap: 10px;
+            .bottom-item{
+              padding: 15px;
+              width: 20vw;
+              height: auto;
+              .weather-icon{
+                margin: 15px 0;
+                img{
+                  width: 45px;
+                  height: 45px;
+                }
+              }
+            }
+          }
+        }
+        .right-top{
+          .today-detail-info{
+            width: 65vw;
+          }
+        }
+        .right-bottom{
+          .bottom-main{
+            .weather-items{
+              gap: 1.5vw;
+              .bottom-item{
+                width: 20vw;
+                min-height: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

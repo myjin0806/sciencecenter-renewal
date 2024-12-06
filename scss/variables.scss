@@ -1,0 +1,81 @@
+// 이 scss는 각 요소 저장용 scss입니다.
+
+/* Font Family */
+$Primary-Kr: 'Kakao-Regular', sans-serif,;
+$Secondary-kr: 'Kakao-Bold', sans-serif;
+$Primary-En: 'Poppins', sans-serif;
+$Mainsection-Kr : 'MaplestoryOTFBold';
+
+/* Setting Variables : Text Color */
+$dark-black: #333333; // 문서 본문 전체 텍스트 색상
+$dim-black: #555555;
+$silver-black: #777777;
+$light-black: #999999;
+$dark-gray: #BDBDBD;
+$dim-gray: #DDDDDD;
+$silver-gray: #EEEEEE; // 입력요소(input) 보더 색상
+$light-gray: #F5F5F5;
+$cloudy-gray: #F9F9F9;
+
+/* Setting Variables : Object Color */
+$footer-light-green : #99D261;
+$light-green: #C2D885;
+$forest-green: #85B214;
+$olive-green: #779302;
+$dark-green: #38761D;
+$deep-green: #284327;
+$footer-green : #5A7938;
+$orangered: #FD5631;
+$orange: #F7A501;
+$yellow: #F6D202;
+$blue: #5089EF;
+$white: #ffffff;
+$black: #000000;
+/* box-shadow */
+$cart-shadow : 0px 0px 10px rgba(#779302, 0.7);
+
+// 버튼 mixin
+@mixin btn-more($width, $height, $fontSize){
+  width: $width;
+  height: $height;
+  font-size: $fontSize;
+  line-height: $height;
+  font-family: $Primary-Kr;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: $forest-green;
+  border: none;
+  border-radius: 60px;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $footer-green;
+    border-radius: inherit;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  &:hover{
+    background: $olive-green;
+    transform: translate(0, 0.25em);
+    &::before{
+      transform: translate3d(0, 0.5em, -1em);
+    }
+  }
+  &:active{
+    background: $forest-green;
+    transform: translate(0em, 0.75em);
+    &::before{
+      box-shadow: 0 0 0 2px $forest-green, 0 0 $forest-green;
+      transform: translate3d(0, 0, -1em);
+    }
+  }
+}
